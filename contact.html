@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact – PDFlow</title>
+<meta name="description" content="Get in touch with the PDFlow team. Questions, feedback, support or partnerships — we read every message.">
+<meta name="theme-color" content="#eef4fb">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PDFlow">
+<meta property="og:title" content="Contact – PDFlow">
+<meta property="og:description" content="Get in touch with the PDFlow team. Questions, feedback, support or partnerships we read every message.">
+<meta property="og:image" content="assets/logo.png">
+<meta name="twitter:card" content="summary">
+<!-- TODO before launch: add <link rel="canonical"> and og:url / og:image as absolute URLs once the domain is final -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.className+=" js"</script>
+</head><body>
+<div class="orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="nav-wrap">
+ <nav class="nav glass" aria-label="Primary">
+  <a class="brand" href="index.html" aria-label="PDFlow home"><img src="assets/icon-192.png" alt="" width="34" height="34">PDFlow</a>
+  <ul class="nav-links"><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+  <a class="cta cta-primary cta-sm nav-cta" href="index.html#upload" data-open-editor>Open editor</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span></button>
+ </nav>
+ <div class="mnav glass" id="mnav"><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#faq">FAQ</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a><a class="cta cta-primary" href="index.html#upload" data-open-editor>Open editor</a></div>
+</header>
+<main class="page-main"><div class="wrap">
+<!-- TODO before launch: replace all placeholder contact details (emails, phone, address) on this page -->
+<div class="phero rv"><div class="eyebrow glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg><span>Contact</span></div>
+ <h1>Let&rsquo;s <span class="gt">talk.</span></h1>
+ <p>Questions, feedback, bug reports or partnership ideas? We read every message and reply within one to two business days.</p></div>
+<div class="contact-grid">
+ <div class="info"><div class="gcard glass rv" style="--d:0.00s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg></div><div><h3>Email</h3><p><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a><br><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p></div></div><div class="gcard glass rv" style="--d:0.06s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><div><h3>Phone</h3><p><a href="tel:+15550100199">+1 (555) 010-0199</a></p></div></div><div class="gcard glass rv" style="--d:0.12s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><h3>Office</h3><p>123 Placeholder Street, Suite 100<br>Your City, ST 00000<br>Your Country</p></div></div><div class="gcard glass rv" style="--d:0.18s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Hours</h3><p>Monday &ndash; Friday<br>9:00 &ndash; 17:00 (your timezone)</p></div></div></div>
+ <form class="form glass rv" id="contactForm" data-to="hello@yourdomain.com">
+  <h2>Send us a message</h2><p class="sub">Fill in the form and we&rsquo;ll get back to you.</p>
+  <div class="fgrid">
+   <div class="field"><label for="cn">Your name</label><input id="cn" name="name" type="text" required autocomplete="name" placeholder="Jane Doe"></div>
+   <div class="field"><label for="ce">Email</label><input id="ce" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+   <div class="field"><label for="ct">Topic</label><select id="ct" name="topic"><option>General question</option><option>Support</option><option>Feedback</option><option>Partnership</option><option>Privacy request</option><option>Press</option></select></div>
+   <div class="field"><label for="cs">Subject</label><input id="cs" name="subject" type="text" placeholder="How can we help?"></div>
+   <div class="field full"><label for="cm">Message</label><textarea id="cm" name="message" required placeholder="Tell us a little more&hellip;"></textarea></div>
+  </div>
+  <button class="cta cta-primary cta-lg" type="submit">Send message<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  <p class="form-note">This opens your email app with your message pre-filled. Please don&rsquo;t include sensitive document contents.</p>
+  <div class="form-ok" id="formOk" role="status">Thanks! Your email app should now be open just press send.</div>
+ </form>
+</div></div>
+</main>
+<footer class="foot glass">
+ <div class="foot-grid">
+  <div><a class="brand" href="index.html"><img src="assets/icon-192.png" alt="" width="34" height="34">PDFlow</a>
+   <p class="t">The private PDF editor. Edit text, sign and annotate right in your browser your files never leave your device.</p></div>
+  <div><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="index.html#upload">Open editor</a></li></ul></div>
+  <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact us</a></li></ul></div>
+  <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
+ </div>
+ <div class="foot-bot"><span>&copy; <span data-year>2026</span> PDFlow. All rights reserved.</span><span>Made with care for your privacy.</span></div>
+</footer>
+<script src="assets/site.js"></script>
+</body></html>
