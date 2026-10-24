@@ -1,4 +1,4 @@
-/* PDFlow — shared site behaviour */
+/* EasyPDFPlay | shared site behaviour */
 (function(){
   var d=document;
   var nav=d.querySelector('.nav'),burger=d.querySelector('.burger'),mnav=d.querySelector('.mnav');
@@ -28,7 +28,7 @@
   else{
     var io=new IntersectionObserver(function(es){
       es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    },{threshold:.08,rootMargin:'0px 0px -24px 0px'});
     els.forEach(function(el){io.observe(el)});
   }
 
@@ -49,9 +49,9 @@
     f.addEventListener('submit',function(e){
       e.preventDefault();
       var v=function(n){return (f.elements[n].value||'').trim()};
-      var to=f.getAttribute('data-to')||'hello@yourdomain.com';
+      var to=f.getAttribute('data-to')||'support@easypdfplay.com';
       var subject='['+v('topic')+'] '+(v('subject')||'Message from '+v('name'));
-      var body=v('message')+'\n\n— '+v('name')+' ('+v('email')+')';
+      var body=v('message')+'\n\nRegards,\n'+v('name')+' ('+v('email')+')';
       window.location.href='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
       var ok=d.getElementById('formOk');if(ok)ok.classList.add('show');
     });

@@ -1,22 +1,31 @@
-# PDFlow – launch checklist
+# EasyPDFPlay
 
-Static site: upload the whole folder to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3…). No build step.
+Static website and in-browser PDF editor. Deploy the project folder to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3, etc.). No build step.
 
 ```
-index.html     landing page + the PDF editor (same engine as before)
-about.html  privacy.html  terms.html  contact.html
-assets/        site.css, site.js, logo + icons
+index.html          Landing page + PDF editor
+about.html          About
+contact.html        Contact (mailto form)
+privacy.html        Privacy Policy
+terms.html          Terms & Conditions
+sitemap.xml         Sitemap
+robots.txt          Crawler rules
+site.webmanifest    PWA manifest
+assets/             Styles, scripts, icons, og-image.png (1200×630)
 ```
 
-## Replace before launch (search for these)
+**Live site:** https://easypdfplay.com  
+**Support:** support@easypdfplay.com · +92 347 3300647
 
-- **Brand name** – "PDFlow" is a placeholder. Find & replace it in all `.html` files.
-- **Contact details** – `hello@yourdomain.com`, `support@yourdomain.com`, `privacy@yourdomain.com`,
-  `legal@yourdomain.com`, phone, and address in `contact.html`, `privacy.html`, `terms.html`.
-- **Legal placeholders** – yellow-highlighted text such as `[Company Legal Name]`, `[Jurisdiction]`,
-  `[Hosting provider]`, retention periods, liability cap. Have a lawyer review Privacy + Terms.
-- **Analytics** – if you add analytics/cookies, update the Privacy Policy (marked in yellow).
-- **SEO** – add `<link rel="canonical">`, absolute `og:url` / `og:image`, a `sitemap.xml` and `robots.txt`
-  once the domain is final (see the TODO comment in each `<head>`).
-- **Contact form** – it opens the visitor's email app (no backend). Swap in Formspree/Netlify Forms/etc. later if wanted.
-# pdf-editor
+## Deploy notes
+
+If the domain changes, find and replace `https://easypdfplay.com` in all `.html` files, `sitemap.xml`, and `robots.txt`.
+
+After deploy:
+
+1. Add the property in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), then submit `https://easypdfplay.com/sitemap.xml`.
+2. Validate sharing previews ([Open Graph checker](https://www.opengraph.xyz)) and structured data ([Rich Results Test](https://search.google.com/test/rich-results)).
+
+## Contact form
+
+The contact page opens the visitor’s email client with a pre-filled message to `support@easypdfplay.com`. No server-side handler is required.
